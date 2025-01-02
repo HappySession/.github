@@ -10,3 +10,4 @@ The **HappySession** service is built around several components:
 |---------|:------------|--------|------------|-----------|
 | **mongo** | An TLS/SSH secured Docker image of [MongoDB](https://www.mongodb.com). | staging | private | Dockerfile |
 | **extractor** | As its name suggests, this component extracts raw data from [NOAA's WW3 model](https://polar.ncep.noaa.gov/waves/wavewatch/). | staging | private | Python, Dockerfile |
+| **rules-engine** | An dedicated [Drools engine](https://www.drools.org) implementation. | staging | private | Java, Dockerfile |
