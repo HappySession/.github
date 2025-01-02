@@ -8,4 +8,4 @@ The **HappySession** service is built around several components:
 
 | Service | Description | Status | Visibility | Languages |
 |---------|:------------|--------|------------|-----------|
-|         |             |        |            |           |
+| **mongo** | An TLS/SSH secured Docker image of [MongoDB](https://www.mongodb.com) | staging | private | Dockerfile |
