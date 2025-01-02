@@ -9,5 +9,6 @@ The **HappySession** service is built around several components:
 | Service | Description | Status | Visibility | Languages |
 |---------|:------------|--------|------------|-----------|
 | **mongo** | An TLS/SSH secured Docker image of [MongoDB](https://www.mongodb.com). | staging | private | Dockerfile |
-| **extractor** | As its name suggests, this component extracts raw data from [NOAA's WW3 model](https://polar.ncep.noaa.gov/waves/wavewatch/). | staging | private | Python, Dockerfile |
-| **rules-engine** | An dedicated [Drools engine](https://www.drools.org) implementation. | staging | private | Java, Dockerfile |
+| **extractor** | As its name suggests, this component extracts raw data from [NOAA's WW3 model](https://polar.ncep.noaa.gov/waves/wavewatch/).  This component acts as CRON to extract data every 6 hours. | staging | private | Python, Dockerfile |
+| **rules-engine** | An dedicated [Drools engine](https://www.drools.org) implementation.  This component acts as CRON to compute forecasts data every 6 hours.| staging | private | Java, Dockerfile |
+| **rules** | A set of rulles dedicated to spot wave foracasts. | staging | private | Java, Dockerfile |
