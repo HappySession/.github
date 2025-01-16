@@ -14,3 +14,4 @@ The **HappySession** service is built around several components:
 | **happy-extractor** | As its name suggests, this component extracts raw data from [NOAA's WW3 model](https://polar.ncep.noaa.gov/waves/wavewatch/). This component acts as CRON to extract data with periodic interval and manage some API verbs. | prod | private | Python, Dockerfile |
 | **happy-rules-engine** | An dedicated [Drools engine](https://www.drools.org) implementation.  This component acts as CRON to compute forecasts data every 6 hours.| staging | private | Java, Dockerfile |
 | **happy-rules** | A set of dedicated rules to spot wave forecasts. | staging | private | Java, Dockerfile |
+| **happy-iOS** | iOS app. | staging | private | Swift |
