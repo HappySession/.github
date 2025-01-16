@@ -8,7 +8,9 @@ The **HappySession** service is built around several components:
 
 | Service | Description | Status | Visibility | Languages |
 |---------|:------------|--------|------------|-----------|
-| **mongo** | An TLS/SSH secured Docker image of [MongoDB](https://www.mongodb.com). | staging | private | Dockerfile |
-| **extractor** | As its name suggests, this component extracts raw data from [NOAA's WW3 model](https://polar.ncep.noaa.gov/waves/wavewatch/).  This component acts as CRON to extract data every 6 hours. | staging | private | Python, Dockerfile |
-| **rules-engine** | An dedicated [Drools engine](https://www.drools.org) implementation.  This component acts as CRON to compute forecasts data every 6 hours.| staging | private | Java, Dockerfile |
-| **rules** | A set of dedicated rules to spot wave forecasts. | staging | private | Java, Dockerfile |
+| **happy-mongo** | An TLS/SSH secured Docker image of [MongoDB](https://www.mongodb.com). | prod | private | Dockerfile |
+| **happy-gateway** | A [Krakend CE]([https://www.mongodb.com](https://www.krakend.io) configuration to propose a gateway with feature of JWT sign and validation on API verbs. | prod | private | Krankend yaml |
+| **happy-api** | The main verbs API for the system. | prod | private | Java, Dockerfile |
+| **happy-extractor** | As its name suggests, this component extracts raw data from [NOAA's WW3 model](https://polar.ncep.noaa.gov/waves/wavewatch/). This component acts as CRON to extract data with periodic interval and manage some API verbs. | prod | private | Python, Dockerfile |
+| **happy-rules-engine** | An dedicated [Drools engine](https://www.drools.org) implementation.  This component acts as CRON to compute forecasts data every 6 hours.| staging | private | Java, Dockerfile |
+| **happy-rules** | A set of dedicated rules to spot wave forecasts. | staging | private | Java, Dockerfile |
