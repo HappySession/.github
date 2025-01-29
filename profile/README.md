@@ -16,4 +16,4 @@ The **HappySession** service is built around several components:
 | **happy-rules-engine** | An dedicated [Drools engine](https://www.drools.org) implementation.  This component acts as CRON to compute forecasts data every 6 hours.| staging | private | Java, Dockerfile |
 | **happy-rules** | A set of dedicated rules to spot wave forecasts. | staging | private | Drools formats |
 | **happy-iOS** | iOS app. | staging | private | Swift |
-| **happy-model-trestraou** | Classifier forecast model for Trestraou spot. | dev | private | Python |
+| **happy-model-trestraou** | Classifier forecasts model for Trestraou spot. | dev | private | Python |
