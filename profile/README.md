@@ -54,10 +54,11 @@ The project explores how **wave models translate into surf conditions at specifi
 Native SwiftUI application designed to help surfers quickly identify the **best spots and best time to paddle out**.
 
 <p align="center">
-<img src="docs/as_full_datas.png" width="200">
-<img src="docs/as_best.png" width="200">
-<img src="docs/as_understand.png" width="200">
-<img src="docs/as_top_fr.png" width="200">
+
+<img src="docs/best_EN.jpg" width="200">
+<img src="docs/understand_EN.jpg" width="200">
+<img src="docs/map_EN.jpg" width="200">
+<img src="docs/top_sessions_EN_2.jpg" width="200">
 </p>
 
 Features:
